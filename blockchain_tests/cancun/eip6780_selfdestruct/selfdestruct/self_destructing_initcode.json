@@ -1,0 +1,2530 @@
+{
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_0-create_opcode_CREATE2]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c20c",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x079296",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x566c60633b3c803073e712a744d0da68ebd9ff58dab0b9eaeb2fc3915b7d7403",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xf239411dfc27d530aab19bbde45ccf764f9bfbd1ed9dcd6a0a997f4f0756f9f9",
+                    "transactionsTrie": "0x880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32",
+                    "receiptTrie": "0xd5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x028632",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0x566c60633b3c803073e712a744d0da68ebd9ff58dab0b9eaeb2fc3915b7d7403"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f3",
+                        "v": "0x26",
+                        "r": "0xf4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542",
+                        "s": "0x1a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902f0f9023ba01dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bca01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0f239411dfc27d530aab19bbde45ccf764f9bfbd1ed9dcd6a0a997f4f0756f9f9a0880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32a0d5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a80830286328203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8aef8ac800a8307a1208080b85f6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f326a0f4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542a01a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x11aa357446a2aad4f46eb7620129868cfc516ed92a69309c228f1aa00e2a0b20",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_0-create_opcode_CREATE]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c36a",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x07922d",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xa8fb37dc424237e192ab7858766b980ad85a9aa5b929bf9c1dbf2907b9443f9e",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x580b577f11600afc91c2f4f6dad4312e381b9768071c0545aba5a967cf8baab1",
+                    "transactionsTrie": "0xabb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cf",
+                    "receiptTrie": "0xa623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977a",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02860f",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0xa8fb37dc424237e192ab7858766b980ad85a9aa5b929bf9c1dbf2907b9443f9e"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f3",
+                        "v": "0x25",
+                        "r": "0x6d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642",
+                        "s": "0x350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebb",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902eef9023ba01dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bca01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0580b577f11600afc91c2f4f6dad4312e381b9768071c0545aba5a967cf8baab1a0abb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cfa0a623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977ab9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302860f8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8acf8aa800a8307a1208080b85d6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f325a06d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642a0350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebbc0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xe0bf82e111f3952d95c8667a286acb3a5ef3db572d3697a8d6ed6b1b02233b77",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_1-create_opcode_CREATE2]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82dff2",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bcd1",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x7590e601f6d8342935217cf82950eab69f5b2c1e3b75b89061743ec5d2322165",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x26938a6647ae87a242c58054b95cbe785ace2d36429ae0d11ebe817a6b237fbd",
+                    "transactionsTrie": "0x64c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3",
+                    "receiptTrie": "0x38fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e99b",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0x7590e601f6d8342935217cf82950eab69f5b2c1e3b75b89061743ec5d2322165"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f3",
+                        "v": "0x25",
+                        "r": "0x96b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715ae",
+                        "s": "0x2c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3be",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf9032df9023ba01dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bca01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa026938a6647ae87a242c58054b95cbe785ace2d36429ae0d11ebe817a6b237fbda064c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3a038fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e99b8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8ebf8e9800a8307a1208080b89c6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f325a096b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715aea02c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3bec0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xf63632c882f6fbb5ec6ec3abf46d6cb64c956ff0abe66d0350675703d1c5c38a",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_1-create_opcode_CREATE]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82e150",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bc68",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x25d4fb14a6c163d10865ce709b345e3d294b6d7f47c9347100392c2d9579d2ef",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x1dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bc",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xbb5f7927c3afbb5c6ce303e2793f2c8751d4f253aa7ea942cef10d48d4cef11e",
+                    "transactionsTrie": "0xaa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84",
+                    "receiptTrie": "0xccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e978",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0x25d4fb14a6c163d10865ce709b345e3d294b6d7f47c9347100392c2d9579d2ef"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f3",
+                        "v": "0x25",
+                        "r": "0xf2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143",
+                        "s": "0x6a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf9032bf9023ba01dc4009f8a2072116b17c4935cb814f3345f123db7dafbb31557f9c609ea30bca01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0bb5f7927c3afbb5c6ce303e2793f2c8751d4f253aa7ea942cef10d48d4cef11ea0aa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84a0ccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e9788203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8e9f8e7800a8307a1208080b89a6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f325a0f2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143a06a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xcee0ae346f036861ae845375fbbcf4aaad0c3d2f348e7b3508038a5097febfd5",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_0-create_opcode_CREATE2]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cf",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0xeac7a23c1a5b92622f4cb2cb2544acdda12ce76cfa58ec3c7a91da2a99cfbd37"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c20c",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x079296",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xf344e361b152880973cc268dec0ddd2a62272f73aa06952e6b7a805e5988ce78",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0xeac7a23c1a5b92622f4cb2cb2544acdda12ce76cfa58ec3c7a91da2a99cfbd37",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x61e3d323fb4fc4765a4ffd257cd6210c662f2d77ba41985250a4cea9de594b0a",
+                    "transactionsTrie": "0x880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32",
+                    "receiptTrie": "0xd5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x028632",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0xf344e361b152880973cc268dec0ddd2a62272f73aa06952e6b7a805e5988ce78"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f3",
+                        "v": "0x26",
+                        "r": "0xf4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542",
+                        "s": "0x1a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902f0f9023ba0eac7a23c1a5b92622f4cb2cb2544acdda12ce76cfa58ec3c7a91da2a99cfbd37a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa061e3d323fb4fc4765a4ffd257cd6210c662f2d77ba41985250a4cea9de594b0aa0880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32a0d5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a80830286328203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8aef8ac800a8307a1208080b85f6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f326a0f4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542a01a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xc002f72f4c518e296334973c8c9b0ffc9eba1867ddf4b672e6e237126cf01845",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_0-create_opcode_CREATE]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0x5319bdb3d688ca487b45fb6882374b0740051835b4ee255bd9009e644733b3af"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x64e2ebd6405af8cb348aec519084d3fff42ebba6": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c36a",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x07922d",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xb2b3b4ae400a4b494623a40bf8ee037e414feb9171173b9441193f903f58cc97",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x5319bdb3d688ca487b45fb6882374b0740051835b4ee255bd9009e644733b3af",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xc9e6e194be28052a966a97dc099f993d88e6b11cca26838bf921ed190e81a86d",
+                    "transactionsTrie": "0xabb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cf",
+                    "receiptTrie": "0xa623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977a",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02860f",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0xb2b3b4ae400a4b494623a40bf8ee037e414feb9171173b9441193f903f58cc97"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f3",
+                        "v": "0x25",
+                        "r": "0x6d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642",
+                        "s": "0x350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebb",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902eef9023ba05319bdb3d688ca487b45fb6882374b0740051835b4ee255bd9009e644733b3afa01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0c9e6e194be28052a966a97dc099f993d88e6b11cca26838bf921ed190e81a86da0abb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cfa0a623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977ab9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302860f8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8acf8aa800a8307a1208080b85d6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f325a06d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642a0350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebbc0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x505254adc0fd5a36fde82733b250c287eb51b773feb06b3f244aa2f543ed022e",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_1-create_opcode_CREATE2]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cf",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0xeac7a23c1a5b92622f4cb2cb2544acdda12ce76cfa58ec3c7a91da2a99cfbd37"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82dff2",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bcd1",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x1e16faea766cc0e5e869ef4a9b630ba36401f6837d831b21fc0e894966476ce5",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0xeac7a23c1a5b92622f4cb2cb2544acdda12ce76cfa58ec3c7a91da2a99cfbd37",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xa4f5852ec9538fb3fa588d7231bd445cac46fdb44b4e7b272113f4faa5deeb0c",
+                    "transactionsTrie": "0x64c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3",
+                    "receiptTrie": "0x38fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e99b",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0x1e16faea766cc0e5e869ef4a9b630ba36401f6837d831b21fc0e894966476ce5"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f3",
+                        "v": "0x25",
+                        "r": "0x96b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715ae",
+                        "s": "0x2c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3be",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf9032df9023ba0eac7a23c1a5b92622f4cb2cb2544acdda12ce76cfa58ec3c7a91da2a99cfbd37a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0a4f5852ec9538fb3fa588d7231bd445cac46fdb44b4e7b272113f4faa5deeb0ca064c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3a038fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e99b8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8ebf8e9800a8307a1208080b89c6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f325a096b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715aea02c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3bec0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xabfa4b3d6cfc093b94fa477925afea4c68dc4479d1d65cde2682dde6b39b3697",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Cancun-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_1-create_opcode_CREATE]": {
+        "network": "Cancun",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "blobGasUsed": "0x00",
+            "excessBlobGas": "0x00",
+            "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0x5319bdb3d688ca487b45fb6882374b0740051835b4ee255bd9009e644733b3af"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x64e2ebd6405af8cb348aec519084d3fff42ebba6": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82e150",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bc68",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x318a6533ee817af3974d6684c8f38b914aa94534ad3d6c621f6c21a7c2c1b3d2",
+        "config": {
+            "network": "Cancun",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
+        "genesisRLP": "0xf9023cf90236a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x5319bdb3d688ca487b45fb6882374b0740051835b4ee255bd9009e644733b3af",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x093c8348e62a92dde2e7658f62d7154e9e6070bae6e17002fb12ffe24d323852",
+                    "transactionsTrie": "0xaa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84",
+                    "receiptTrie": "0xccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e978",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "blobGasUsed": "0x00",
+                    "excessBlobGas": "0x00",
+                    "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "hash": "0x318a6533ee817af3974d6684c8f38b914aa94534ad3d6c621f6c21a7c2c1b3d2"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f3",
+                        "v": "0x25",
+                        "r": "0xf2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143",
+                        "s": "0x6a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf9032bf9023ba05319bdb3d688ca487b45fb6882374b0740051835b4ee255bd9009e644733b3afa01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0093c8348e62a92dde2e7658f62d7154e9e6070bae6e17002fb12ffe24d323852a0aa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84a0ccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e9788203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000f8e9f8e7800a8307a1208080b89a6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f325a0f2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143a06a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xc7d2e8736c2ccdff52d228ec28c7abe5bea1a1e2b7e820c4a1c631a4f857cfee",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_0-create_opcode_CREATE2]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c20c",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x079296",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xf64dc04500901f73b7c6972fe7828c995f279ca66d428ae643400e9774d4d262",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xf239411dfc27d530aab19bbde45ccf764f9bfbd1ed9dcd6a0a997f4f0756f9f9",
+                    "transactionsTrie": "0x880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32",
+                    "receiptTrie": "0xd5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x028632",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0xf64dc04500901f73b7c6972fe7828c995f279ca66d428ae643400e9774d4d262"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f3",
+                        "v": "0x26",
+                        "r": "0xf4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542",
+                        "s": "0x1a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902cdf90218a07b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046faea01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0f239411dfc27d530aab19bbde45ccf764f9bfbd1ed9dcd6a0a997f4f0756f9f9a0880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32a0d5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a80830286328203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8aef8ac800a8307a1208080b85f6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f326a0f4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542a01a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xbc05c21eac8c9c67859096cf1ca41fba82c1747e7197b2699a24a14209cf7108",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_0-create_opcode_CREATE]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c36a",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x07922d",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x7c93c6f945f1725ee61369b352709f70127610e601c5f85b60c7a52a0466ade5",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x580b577f11600afc91c2f4f6dad4312e381b9768071c0545aba5a967cf8baab1",
+                    "transactionsTrie": "0xabb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cf",
+                    "receiptTrie": "0xa623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977a",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02860f",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0x7c93c6f945f1725ee61369b352709f70127610e601c5f85b60c7a52a0466ade5"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f3",
+                        "v": "0x25",
+                        "r": "0x6d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642",
+                        "s": "0x350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebb",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902cbf90218a07b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046faea01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0580b577f11600afc91c2f4f6dad4312e381b9768071c0545aba5a967cf8baab1a0abb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cfa0a623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977ab9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302860f8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8acf8aa800a8307a1208080b85d6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f325a06d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642a0350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebbc0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x430511e2118853d78d9931d6e158fbe7eff613f67e9e9e56886af6db0e53d827",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_1-create_opcode_CREATE2]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82dff2",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bcd1",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xfa6ada851833d1b50ab0a0a985eedaba5053e58ca25f7d170816902a1d066235",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x26938a6647ae87a242c58054b95cbe785ace2d36429ae0d11ebe817a6b237fbd",
+                    "transactionsTrie": "0x64c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3",
+                    "receiptTrie": "0x38fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e99b",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0xfa6ada851833d1b50ab0a0a985eedaba5053e58ca25f7d170816902a1d066235"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f3",
+                        "v": "0x25",
+                        "r": "0x96b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715ae",
+                        "s": "0x2c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3be",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf9030af90218a07b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046faea01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa026938a6647ae87a242c58054b95cbe785ace2d36429ae0d11ebe817a6b237fbda064c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3a038fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e99b8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8ebf8e9800a8307a1208080b89c6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f325a096b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715aea02c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3bec0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0xf06b30e6accbb94910c705e36c4807f7ca5c4248d79f33266ca0388c9a3b825e",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_0-call_times_1-create_opcode_CREATE]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0xca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82e150",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bc68",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xe862b198104ab38de3c3664173d23b3acece4cf308ccdd3848a3d56927f2dc1a",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ca53890a47ab70d99b81c0e974b868dd906a6d12c08605910e77ff53c11990e1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x7b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046fae",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xbb5f7927c3afbb5c6ce303e2793f2c8751d4f253aa7ea942cef10d48d4cef11e",
+                    "transactionsTrie": "0xaa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84",
+                    "receiptTrie": "0xccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e978",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0xe862b198104ab38de3c3664173d23b3acece4cf308ccdd3848a3d56927f2dc1a"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f3",
+                        "v": "0x25",
+                        "r": "0xf2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143",
+                        "s": "0x6a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf90308f90218a07b8f4ce59b3dbda0c6f0175bb360300fcaeb149eec50d6b9fc0190e915046faea01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0bb5f7927c3afbb5c6ce303e2793f2c8751d4f253aa7ea942cef10d48d4cef11ea0aa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84a0ccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e9788203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8e9f8e7800a8307a1208080b89a6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f325a0f2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143a06a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x6ccd0f897cec44c1b4610cf682377ecc65b45a20f7cbf4086ee47a1e753dfd11",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_0-create_opcode_CREATE2]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cf",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x56d6b6e7b755e40561a3eab113d498f1ff5bd38f229b2cc26412177381c08978"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c20c",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x079296",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0x04b16297ec7a4b629ba55316898ef80bc0bf7bdba4bdb6c2877421898316ca6c",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x56d6b6e7b755e40561a3eab113d498f1ff5bd38f229b2cc26412177381c08978",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x61e3d323fb4fc4765a4ffd257cd6210c662f2d77ba41985250a4cea9de594b0a",
+                    "transactionsTrie": "0x880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32",
+                    "receiptTrie": "0xd5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x028632",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0x04b16297ec7a4b629ba55316898ef80bc0bf7bdba4bdb6c2877421898316ca6c"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f3",
+                        "v": "0x26",
+                        "r": "0xf4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542",
+                        "s": "0x1a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902cdf90218a056d6b6e7b755e40561a3eab113d498f1ff5bd38f229b2cc26412177381c08978a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa061e3d323fb4fc4765a4ffd257cd6210c662f2d77ba41985250a4cea9de594b0aa0880417e3b3a56f810b27f87c0ada337abdf49fec02d050523431f14fcbda7d32a0d5a85a795cbf36a6f2084e0e0af60ed20b32cd2363507f3106971d33065d4f95b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a80830286328203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8aef8ac800a8307a1208080b85f6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560016025f326a0f4c2b84b0a69ab2c8dea2a56b2e6eb2c226df060b09e691a5c72856e07a5f542a01a311e55f4737bb44a8dd4b9dc42832c3768d5e78f6e8d5e6e8966350105d485c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x0f7c1f3bccff218e2a46bfab03fb540090bd5b75f585c65ae520214daf49e863",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_0-create_opcode_CREATE]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x30d8c647fc18a57b029bc98076134e619a1459571d317f4acb5432534402d717"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x64e2ebd6405af8cb348aec519084d3fff42ebba6": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de86c36a",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x07922d",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xa2a94356cbafec80dcdcb4ba0e475de8456c797c9c7ac289e719fa2314670bc1",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x30d8c647fc18a57b029bc98076134e619a1459571d317f4acb5432534402d717",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xc9e6e194be28052a966a97dc099f993d88e6b11cca26838bf921ed190e81a86d",
+                    "transactionsTrie": "0xabb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cf",
+                    "receiptTrie": "0xa623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977a",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02860f",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0xa2a94356cbafec80dcdcb4ba0e475de8456c797c9c7ac289e719fa2314670bc1"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f3",
+                        "v": "0x25",
+                        "r": "0x6d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642",
+                        "s": "0x350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebb",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf902cbf90218a030d8c647fc18a57b029bc98076134e619a1459571d317f4acb5432534402d717a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0c9e6e194be28052a966a97dc099f993d88e6b11cca26838bf921ed190e81a86da0abb8036edddcfc0b39ad2d51e69f943c7f5ad52a13b0117b583687ada04c15cfa0a623a1ae4ff3dfc66f6c0e447e7bf5f9bbc38bca6ae11817281a952fdab1977ab9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302860f8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8acf8aa800a8307a1208080b85d6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f60025560016025f325a06d470ddf130192f24880dbc6ace03bf4a54a22c5f0b7f30b25b941c6b2adc642a0350db5c414f2cbdf133cb7c04ae145256f237cb322b69c07aee023c3686baebbc0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x1fa826223b2e601b439422099e29ad0bec5eb3a3ae6acb5b3a99ca36e22bbc1c",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_1-create_opcode_CREATE2]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cf",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x56d6b6e7b755e40561a3eab113d498f1ff5bd38f229b2cc26412177381c08978"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82dff2",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x4f07a721658ce3ad45f4ad8f916e64e8cc0bfd29",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bcd1",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xc8e1372417c0b51ce88ae60efec0c422ef67e033c66f30393a530dd2773a0da1",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02c21d4487f246643ca0e7d8330ff65b4cc3092076e01db2e9efa2aab967ff0cfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x56d6b6e7b755e40561a3eab113d498f1ff5bd38f229b2cc26412177381c08978",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0xa4f5852ec9538fb3fa588d7231bd445cac46fdb44b4e7b272113f4faa5deeb0c",
+                    "transactionsTrie": "0x64c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3",
+                    "receiptTrie": "0x38fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e99b",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0xc8e1372417c0b51ce88ae60efec0c422ef67e033c66f30393a530dd2773a0da1"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f3",
+                        "v": "0x25",
+                        "r": "0x96b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715ae",
+                        "s": "0x2c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3be",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf9030af90218a056d6b6e7b755e40561a3eab113d498f1ff5bd38f229b2cc26412177381c08978a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0a4f5852ec9538fb3fa588d7231bd445cac46fdb44b4e7b272113f4faa5deeb0ca064c6f52e827df5b11b3a980bbe0f33a5cc090e23622dd0c4f549c9ae0a2f2ff3a038fb9a448e6799a2684cbd1da1b26b68e951d7a64f6af679b1f605b3cba07f50b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e99b8203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8ebf8e9800a8307a1208080b89c6025600060007310000000000000000000000000000000000011003c6000602560006000f5600055734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293b600155734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293f60025560006000600060006000734f07a721658ce3ad45f4ad8f916e64e8cc0bfd2945f1600355734f07a721658ce3ad45f4ad8f916e64e8cc0bfd293160045560016025f325a096b307e97363f9dd619d52312dda5ab7c5c0a81ba748d7e5a82143b7332715aea02c7af4f9b29b14e2cfc33bb7f1e7f8cf68b9ee0801a3be747aad8740d995a3bec0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x81e722e67fc51719e77e653a62c65cbe6d2e9b87041c9b68bf9d1ea6c8793c85",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    },
+    "tests/cancun/eip6780_selfdestruct/test_selfdestruct.py::test_self_destructing_initcode[fork_Shanghai-blockchain_test_from_state_test-selfdestruct_contract_initial_balance_100000-call_times_1-create_opcode_CREATE]": {
+        "network": "Shanghai",
+        "genesisBlockHeader": {
+            "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "coinbase": "0x0000000000000000000000000000000000000000",
+            "stateRoot": "0x2153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624",
+            "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "difficulty": "0x00",
+            "number": "0x00",
+            "gasLimit": "0x055d4a80",
+            "gasUsed": "0x00",
+            "timestamp": "0x00",
+            "extraData": "0x00",
+            "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "nonce": "0x0000000000000000",
+            "baseFeePerGas": "0x07",
+            "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "hash": "0x30d8c647fc18a57b029bc98076134e619a1459571d317f4acb5432534402d717"
+        },
+        "pre": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x64e2ebd6405af8cb348aec519084d3fff42ebba6": {
+                "nonce": "0x00",
+                "balance": "0x0186a0",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "postState": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de82e150",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x1000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x0186a0",
+                "code": "0x6000600055",
+                "storage": {
+                    "0x00": "0x01"
+                }
+            },
+            "0x1000000000000000000000000000000000001100": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600160005401600055731000000000000000000000000000000000001000ff600060005500",
+                "storage": {}
+            },
+            "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f": {
+                "nonce": "0x02",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x00": "0x64e2ebd6405af8cb348aec519084d3fff42ebba6",
+                    "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                    "0x03": "0x01"
+                }
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x08bc68",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "lastblockhash": "0xf3897f629cd2e2346ff39190f9e4ad18edde0c0dce41158f9c3b86baac8fb0ba",
+        "config": {
+            "network": "Shanghai",
+            "chainid": "0x01"
+        },
+        "genesisRLP": "0xf90219f90213a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02153098b5699babd050831860e213b0724999f11918aec34d985ba4ca9ba9624a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808084055d4a80808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421c0c0c0",
+        "blocks": [
+            {
+                "blockHeader": {
+                    "parentHash": "0x30d8c647fc18a57b029bc98076134e619a1459571d317f4acb5432534402d717",
+                    "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                    "stateRoot": "0x093c8348e62a92dde2e7658f62d7154e9e6070bae6e17002fb12ffe24d323852",
+                    "transactionsTrie": "0xaa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84",
+                    "receiptTrie": "0xccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "difficulty": "0x00",
+                    "number": "0x01",
+                    "gasLimit": "0x055d4a80",
+                    "gasUsed": "0x02e978",
+                    "timestamp": "0x03e8",
+                    "extraData": "0x00",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "nonce": "0x0000000000000000",
+                    "baseFeePerGas": "0x07",
+                    "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "hash": "0xf3897f629cd2e2346ff39190f9e4ad18edde0c0dce41158f9c3b86baac8fb0ba"
+                },
+                "transactions": [
+                    {
+                        "type": "0x00",
+                        "chainId": "0x01",
+                        "nonce": "0x00",
+                        "gasPrice": "0x0a",
+                        "gasLimit": "0x07a120",
+                        "value": "0x00",
+                        "data": "0x6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f3",
+                        "v": "0x25",
+                        "r": "0xf2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143",
+                        "s": "0x6a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078",
+                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                        "to": ""
+                    }
+                ],
+                "uncleHeaders": [],
+                "withdrawals": [],
+                "rlp": "0xf90308f90218a030d8c647fc18a57b029bc98076134e619a1459571d317f4acb5432534402d717a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0093c8348e62a92dde2e7658f62d7154e9e6070bae6e17002fb12ffe24d323852a0aa81bc1debdbf043b6c37d6d9fb4e4df1d1e651f5ffd1507f70360f1d306bc84a0ccc021c873ff0e251c36587686acf804080564a5ec0c6abeb88dee750c71b2e2b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800184055d4a808302e9788203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421f8e9f8e7800a8307a1208080b89a6025600060007310000000000000000000000000000000000011003c602560006000f06000557364e2ebd6405af8cb348aec519084d3fff42ebba63b6001557364e2ebd6405af8cb348aec519084d3fff42ebba63f600255600060006000600060007364e2ebd6405af8cb348aec519084d3fff42ebba645f16003557364e2ebd6405af8cb348aec519084d3fff42ebba63160045560016025f325a0f2106f3dca46be800afcf4a4a54c3890973d02310c915576f86a15fbd2e74143a06a60a1ec8191c5c7d67428fb73ff1277b5832c1aaebbe5277527314664e2b078c0c0",
+                "blocknumber": "1"
+            }
+        ],
+        "sealEngine": "NoProof",
+        "_info": {
+            "hash": "0x3a669855713259bdf5f202580ca2809fd4c8ef53d74f66a7c2f9e971b01c56f9",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test that a contract can self-destruct in its initcode.\n\n    Behavior is the same before and after EIP-6780.\n\n    Test using:\n        - Different initial balances for the self-destructing contract\n        - Different opcodes: CREATE, CREATE2\n        - Different number of calls to the self-destructing contract in\n           the same tx",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/e78565158bad26de99c70138163d49321a6acc84/tests/cancun/eip6780_selfdestruct/test_selfdestruct.py#L336",
+            "fixture-format": "blockchain_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
+            "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
+            "eels-resolution": {
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
+            }
+        }
+    }
+}
